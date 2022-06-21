@@ -17,7 +17,7 @@ const server = http.createServer(app);
 
 async function startServer ()
 {
-   await mongooseConnect();
+    await mongooseConnect();
     await loadPlanetsData();
     await loadLaunchData();
     server.listen(PORT,()=>{
